@@ -35,3 +35,5 @@ The system pipeline consists of four distinct layers:
 ├── requirements.txt        # Python dependencies
 ├── faiss_index_store/      # Pre-trained Vector Database (The "Brain")
 └── README.md               # Project documentation
+
+
