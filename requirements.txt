@@ -1,0 +1,13 @@
+streamlit
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langchain-google-genai>=2.0.0
+langchain-huggingface>=0.1.0
+faiss-cpu
+sentence-transformers
+deep-translator
+gTTS
+pillow
+google-generativeai
+pydantic>=2.0.0
