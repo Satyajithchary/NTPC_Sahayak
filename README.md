@@ -10,7 +10,7 @@
 
 ## 🚀 Key Features
 
-*   **Multi-Modal Analysis:** Integrates **Computer Vision** (Gemini Flash) to analyze site photos (e.g., fire, leakage) and generate context-aware safety responses.
+*   **Multi-Modal Analysis:** Integrates **Computer Vision** (Gemini 2.5 Flash) to analyze site photos (e.g., fire, leakage) and generate context-aware safety responses.
 *   **Advanced RAG Architecture:** Utilizes **HyDE (Hypothetical Document Embeddings)** and **Cross-Encoder Re-Ranking** to ensure high-precision retrieval from technical manuals.
 *   **Source Traceability:** Every AI response cites the specific PDF manual used, ensuring trust and accountability.
 *   **Multilingual Support:** Provides real-time **Neural Machine Translation** (Hindi, Telugu, Marathi, Odia) and **Text-to-Speech (TTS)** audio for accessible field guidance.
