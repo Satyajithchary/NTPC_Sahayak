@@ -37,7 +37,6 @@ def analyze_image_with_gemini(image, api_key):
     """Uses Gemini to see the image."""
     try:
         genai.configure(api_key=api_key)
-        # Using 1.5-flash for speed and stability
         model = genai.GenerativeModel('gemini-2.5-flash') 
         response = model.generate_content([
             "Analyze this industrial image. Describe the equipment condition, look for leaks, corrosion, fire, or reading values on gauges. Be technical.", 
@@ -49,7 +48,6 @@ def analyze_image_with_gemini(image, api_key):
 
 # --- AUDIO CLEANER ---
 def clean_text_for_audio(text):
-    """Removes markdown symbols so audio flows naturally."""
     # Remove asterisks, hashes, and dashes used for formatting
     clean = re.sub(r'[\*\#\-]', '', text)
     # Remove extra whitespace
@@ -71,7 +69,6 @@ def translate_and_audio(text, lang):
     # Audio Generation
     audio_bytes = None
     try:
-        # CLEAN THE TEXT BEFORE AUDIO GENERATION
         audio_text = clean_text_for_audio(final_text)
         if audio_text.strip():
             tts = gTTS(text=audio_text, lang=target_code, slow=False)
